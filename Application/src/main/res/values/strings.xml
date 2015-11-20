@@ -5,5 +5,15 @@
     <string name="title_section1">Jeu</string>
     <string name="title_section2">Personnage</string>
     <string name="title_section3">Inventaire</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="classes_array">
+        <item>Archer</item>
+        <item>Guerrier</item>
+        <item>Voleur</item>
+        <item>Mage</item>
+    </string-array>
 
 </resources>
