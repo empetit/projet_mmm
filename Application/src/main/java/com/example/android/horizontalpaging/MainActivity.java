@@ -95,6 +95,18 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         }
         // END_INCLUDE (add_tabs)
 
+        Player player = null;
+
+        if(getIntent().getExtras() != null) {
+            String pseudo = getIntent().getExtras().getString("pseudo");
+            switch(getIntent().getExtras().getString("classe")) {
+                case "Archer": player = new Player(pseudo, new Archer()); break;
+            }
+            System.out.println(player.toString());
+        }
+
+
+
         gameManager = new GameManager();
 
     }

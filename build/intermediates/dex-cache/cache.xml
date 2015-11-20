@@ -2,39 +2,207 @@
 <items version="2" >
 
     <item
-        jar="D:\Dev\miage\MMM\android-basic-samples\HorizontalPaging\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="D:\Dev\miage\MMM\android-basic-samples\HorizontalPaging\Application\build\intermediates\pre-dexed\debug\classes-e94d0a05630e18b3a0045aea5fe28b43e7fb117e.jar" />
+        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-f71843cdadcba2083588d6be97dae0c01e5b5997.jar" />
     </item>
     <item
-        jar="D:\Dev\miage\MMM\android-basic-samples\HorizontalPaging\Application\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.0.0\jars\classes.jar"
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="1618fd467fb5971c394741e8976ededb97aaee0a">
-        <dex dex="D:\Dev\miage\MMM\android-basic-samples\HorizontalPaging\Application\build\intermediates\pre-dexed\debug\classes-15becbdd16914f009cf989642ddd792c4d60b14d.jar" />
+        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-f24cd0d75bad6abddd42089a25d91c96a88a6033.jar" />
     </item>
     <item
-        jar="D:\Dev\miage\MMM\android-basic-samples\HorizontalPaging\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="D:\Dev\miage\MMM\android-basic-samples\HorizontalPaging\Application\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-e4d821a2c51cf96b63c11df8d688c27abf02c597.jar" />
+        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-6a7b9584fc004d51d2678a3885da74840a2b335a.jar" />
     </item>
     <item
-        jar="C:\Users\epeti\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jar="/Users/fesnault/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="D:\Dev\miage\MMM\android-basic-samples\HorizontalPaging\Application\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-c13fc024c5984a4495dd4c8817671e29dac3b55a.jar" />
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-2e05918203a4abda38a52e545c640b453870773c.jar" />
     </item>
     <item
-        jar="D:\Dev\miage\MMM\android-basic-samples\HorizontalPaging\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.0\jars\classes.jar"
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
-        <dex dex="D:\Dev\miage\MMM\android-basic-samples\HorizontalPaging\Application\build\intermediates\pre-dexed\debug\classes-7270c3d96a96fda743abb390980290bb630164e3.jar" />
+        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-2cca40ed24334febf791006b11801a41d928414d.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c2ac04c5b232f6f0658ee4f1c13be09cd76406e2">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-264b5b8958fc31898fa3854bab80b0360d61c477.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1134458f31b57c1b185e9efabba10219d41f2c85">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-131482eac16b843c14f66ec876bf703fb51f14f7.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-447c05e9a9b42703d844b418a845270dff975c98.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-bfd156ee9ac80f7490e25b0c886b4e7ade05c3fe.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-a78f5a98384a659488aa8f971a4845847916a330.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-cbd9bcf0f37e773d7da7ccb8e7b734c4d540dd81.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-456d85f117346b65f03ee1fdb3d13afa0214923d.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4a135d56554069e5d0ff80e3220e887e57146ee5">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-d02bcc8d07ce05999e722731a5ecb30ef4f99689.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-89dd233db2f1efb3cc60588d33afe06948dc82ab.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-495ee6c1e37473be056f0961a88458943a9f20da.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-d80c004460e95f01bc8a4f8e5e84054db695a903.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-4e8be3f51ceac563211f40609aa25f6463211fd9.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-b546752c0a8da44d952045cc2db57fb315453a78.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-df4b7f26a5ff9c4f159e22771616672ade411c31.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-0104e450e2915b92f521010348cd59e34bce94b2.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-bc9e534d8fde3faae0102a37c9d16021c1e2cdd0.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2e24e5f1b11170163028277de63f709e42525db4">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-81bf7f0dfdbc911a5fee30bbf26d377918519362.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-3dfe0914cce4016d3e8e10499f60e87bfe7f4d6a.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-859caaafd1921604d82de993fbda8ad50405216e.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="77a9dcb5f8b1dba36aacaa9c150eb0942dbea158">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-ce62b9643614763c541ea6f993ead6c69d3f571a.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-517cc1ba4746026a5f172afc397cb934f63772ee.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-bea6be9dc37433d4446b3ad8098e4e1705aa6dbe.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-4d05a0304b21ffcae9bdf71127d9cfc9088b150b.jar" />
+    </item>
+    <item
+        jar="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.8.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
+        <dex dex="/Users/fesnault/AndroidStudioProjects/projet_mmm/Application/build/intermediates/pre-dexed/debug/classes-015efce7958a9440f9657f17d893ea439f33f8ff.jar" />
     </item>
 
 </items>

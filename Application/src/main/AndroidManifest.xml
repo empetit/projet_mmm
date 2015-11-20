@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
  Copyright 2013 The Android Open Source Project
 
@@ -14,28 +14,44 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.horizontalpaging"
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <!-- While ViewPager will work on API 4 or above, tabs require an ActionBar. ActionBar is only
-         available in API 11 or above. -->
-    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
+    <!--
+ While ViewPager will work on API 4 or above, tabs require an ActionBar. ActionBar is only
+         available in API 11 or above.
+    -->
+    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <!-- This is a standard Activity invocation for MainActivity. -->
         <activity
-            android:name="com.example.android.horizontalpaging.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
