@@ -4,6 +4,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_section1">Jeu</string>
     <string name="title_section2">Personnage</string>
-    <string name="title_section3">Carte</string>
+    <string name="title_section3">Inventaire</string>
 
 </resources>

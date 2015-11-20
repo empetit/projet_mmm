@@ -294,7 +294,8 @@ containing a value of this type.
         public static final int left=0x7f08000e;
         public static final int levelDescription=0x7f080014;
         public static final int levelName=0x7f080013;
-        public static final int pager=0x7f080019;
+        public static final int pager=0x7f08001a;
+        public static final int playerName=0x7f080019;
         public static final int right=0x7f08000f;
         public static final int section_label=0x7f080012;
         public static final int start=0x7f080010;
@@ -304,7 +305,8 @@ containing a value of this type.
     public static final class layout {
         public static final int fragment_main_dummy=0x7f030000;
         public static final int fragment_main_game=0x7f030001;
-        public static final int sample_main=0x7f030002;
+        public static final int fragment_main_personnage=0x7f030002;
+        public static final int sample_main=0x7f030003;
     }
     public static final class string {
         public static final int action_settings=0x7f070000;
@@ -319,11 +321,12 @@ containing a value of this type.
         public static final int CardView=0x7f050003;
         public static final int CardView_Dark=0x7f050004;
         public static final int CardView_Light=0x7f050005;
+        public static final int NoActionBar=0x7f050006;
         public static final int Theme_Base=0x7f050001;
-        public static final int Theme_Sample=0x7f050006;
-        public static final int Widget=0x7f050007;
+        public static final int Theme_Sample=0x7f050007;
+        public static final int Widget=0x7f050008;
         public static final int Widget_SampleMessage=0x7f050000;
-        public static final int Widget_SampleMessageTile=0x7f050008;
+        public static final int Widget_SampleMessageTile=0x7f050009;
     }
     public static final class styleable {
         /** Attributes that can be used with a CardView.

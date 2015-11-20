@@ -15,6 +15,10 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
+import fr.istic.m2miage.dungeonassault.Dungeon;
+import fr.istic.m2miage.dungeonassault.GameManager;
+import fr.istic.m2miage.dungeonassault.Player;
+
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
 
     /**
@@ -59,6 +63,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         // BEGIN_INCLUDE (set_navigation_mode)
         final ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        actionBar.setDisplayShowTitleEnabled(false);
         // END_INCLUDE (set_navigation_mode)
 
         // BEGIN_INCLUDE (setup_view_pager)
@@ -96,6 +101,10 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         // END_INCLUDE (add_tabs)
 
         gameManager = new GameManager();
+
+        gameManager.setCurrentDungeon(new Dungeon(1,15));
+
+        gameManager.setCurrentPlayer( new Player("Michel le chacal"));
 
     }
 
@@ -219,18 +228,37 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
             View rootView = null;
 
+            GameManager gm = ((MainActivity)getActivity()).gameManager;
+
             switch(requested){
                 case 1:
+                    Dungeon dj = gm.getCurrentDungeon();
+
+                    //jeu
                     rootView = inflater.inflate(R.layout.fragment_main_game, container, false);
-                    TextView levelTitle = (TextView) rootView.findViewById(R.id.levelDescription);
-                    levelTitle.setText(((MainActivity)getActivity()).gameManager.getDungeonName());
+
+                    gm.updateJeu();
+
+                    //nom du niveau
+                    ((TextView) rootView.findViewById(R.id.levelName)).setText(dj.getName());
+
+                    //description
+                    ((TextView) rootView.findViewById(R.id.levelDescription)).setText(dj.getName());
                     break;
                 case 2:
-                    rootView = inflater.inflate(R.layout.fragment_main_dummy, container, false);
-                    TextView dummyTextView = (TextView) rootView.findViewById(R.id.section_label);
-                    dummyTextView.setText("Mon personnage");
+                    Player player = gm.getCurrentPlayer();
+
+                    //personnage
+                    rootView = inflater.inflate(R.layout.fragment_main_personnage, container, false);
+
+                    gm.updatePlayer();
+
+                    ((TextView) rootView.findViewById(R.id.playerName)).setText(player.getPseudo());
                     break;
                 case 3:
+                    //inventaire
+                    gm.updateInventaire();
+
                     rootView = inflater.inflate(R.layout.fragment_main_dummy, container, false);
                     break;
 

@@ -23,6 +23,11 @@
     <style name="Theme.Sample" parent="Theme.Base" />
 
     <style name="AppTheme" parent="Theme.Sample" />
+
+    <style name="NoActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
     <!-- Widget styling -->
 
     <style name="Widget" />

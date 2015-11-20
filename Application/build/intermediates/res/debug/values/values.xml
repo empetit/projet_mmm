@@ -50,7 +50,7 @@
     <eat-comment/>
     <string name="title_section1">Jeu</string>
     <string name="title_section2">Personnage</string>
-    <string name="title_section3">Carte</string>
+    <string name="title_section3">Inventaire</string>
     <!-- From: file:/D:/Dev/miage/MMM/projet_mmm/Application/src/main/res/values/template-styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="Theme.Sample"/>
@@ -72,6 +72,9 @@
     </style>
     <!-- From: file:/D:/Dev/miage/MMM/projet_mmm/Application/src/main/res/values/template-styles.xml -->
     <eat-comment/>
+    <style name="NoActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
     <style name="Theme.Base" parent="android:Theme.Light"/>
     <style name="Theme.Sample" parent="Theme.Base"/>
     <style name="Widget"/>
