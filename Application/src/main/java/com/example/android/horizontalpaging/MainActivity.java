@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
+import fr.istic.m2miage.dungeonassault.Archer;
 import fr.istic.m2miage.dungeonassault.Dungeon;
 import fr.istic.m2miage.dungeonassault.GameManager;
 import fr.istic.m2miage.dungeonassault.Player;
@@ -100,11 +101,21 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         }
         // END_INCLUDE (add_tabs)
 
+        Player player = null;
+
+        if(getIntent().getExtras() != null) {
+            String pseudo = getIntent().getExtras().getString("pseudo");
+            switch(getIntent().getExtras().getString("classe")) {
+                case "Archer": player = new Player(pseudo, new Archer()); break;
+            }
+            System.out.println(player.toString());
+        }
+
         gameManager = new GameManager();
 
         gameManager.setCurrentDungeon(new Dungeon(1,15));
 
-        gameManager.setCurrentPlayer( new Player("Michel le chacal"));
+        gameManager.setCurrentPlayer(player);
 
     }
 
@@ -253,7 +264,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
                     gm.updatePlayer();
 
-                    ((TextView) rootView.findViewById(R.id.playerName)).setText(player.getPseudo());
+                    ((TextView) rootView.findViewById(R.id.playerName)).setText(player.toString());
                     break;
                 case 3:
                     //inventaire

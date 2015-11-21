@@ -1,9 +1,14 @@
 package com.example.android.horizontalpaging;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
 
 public class HomeActivity extends Activity {
 
@@ -11,6 +16,12 @@ public class HomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.classes_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
     }
 
     @Override
@@ -33,5 +44,12 @@ public class HomeActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void validate(View view) {
+        Intent i = new Intent(this, MainActivity.class);
+        i.putExtra("pseudo", ((EditText) findViewById(R.id.inputPseudo)).getText().toString());
+        i.putExtra("classe", ((Spinner) findViewById(R.id.spinner)).getSelectedItem().toString());
+        startActivity(i);
     }
 }
