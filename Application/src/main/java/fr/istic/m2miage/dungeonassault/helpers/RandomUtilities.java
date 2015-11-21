@@ -1,4 +1,4 @@
-package fr.istic.m2miage.dungeonassault;
+package fr.istic.m2miage.dungeonassault.helpers;
 
 import java.util.Random;
 

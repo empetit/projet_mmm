@@ -17,7 +17,7 @@ public class HomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        Spinner spinner = (Spinner) findViewById(R.id.classSelection);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.classes_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -49,7 +49,7 @@ public class HomeActivity extends Activity {
     public void validate(View view) {
         Intent i = new Intent(this, MainActivity.class);
         i.putExtra("pseudo", ((EditText) findViewById(R.id.inputPseudo)).getText().toString());
-        i.putExtra("classe", ((Spinner) findViewById(R.id.spinner)).getSelectedItem().toString());
+        i.putExtra("classe", ((Spinner) findViewById(R.id.classSelection)).getSelectedItem().toString());
         startActivity(i);
     }
 }

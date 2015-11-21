@@ -10,9 +10,9 @@
     <string name="hello_world">Hello world!</string>
 
     <string-array name="classes_array">
-        <item>Archer</item>
-        <item>Guerrier</item>
-        <item>Voleur</item>
+        <item>Priest</item>
+        <item>Warrior</item>
+        <item>Rogue</item>
         <item>Mage</item>
     </string-array>
 

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/D:/Dev/miage/MMM/projet_mmm/Application/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="classes_array">
+        <item>Priest</item>
+        <item>Warrior</item>
+        <item>Rogue</item>
+        <item>Mage</item>
+    </string-array>
     <!-- From: file:/D:/Dev/miage/MMM/projet_mmm/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="cardview_dark_background">#FF202020</color>
@@ -36,6 +44,11 @@
     <!-- From: file:/D:/Dev/miage/MMM/projet_mmm/Application/src/main/res/values/base-strings.xml -->
     <eat-comment/>
     <string name="app_name">RPG</string>
+    <!-- From: file:/D:/Dev/miage/MMM/projet_mmm/Application/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/D:/Dev/miage/MMM/projet_mmm/Application/src/main/res/values/base-strings.xml -->
+    <eat-comment/>
     <string name="intro_message">
         <![CDATA[
         
@@ -48,6 +61,7 @@
     </string>
     <!-- From: file:/D:/Dev/miage/MMM/projet_mmm/Application/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_home">HomeActivity</string>
     <string name="title_section1">Jeu</string>
     <string name="title_section2">Personnage</string>
     <string name="title_section3">Inventaire</string>

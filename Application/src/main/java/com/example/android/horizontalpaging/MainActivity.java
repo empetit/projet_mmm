@@ -11,11 +11,11 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.util.Locale;
 
-import fr.istic.m2miage.dungeonassault.Archer;
 import fr.istic.m2miage.dungeonassault.Dungeon;
 import fr.istic.m2miage.dungeonassault.GameManager;
 import fr.istic.m2miage.dungeonassault.Player;
@@ -101,14 +101,17 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         }
         // END_INCLUDE (add_tabs)
 
+
+        //on recoit les données de la home vie intent
         Player player = null;
 
         if(getIntent().getExtras() != null) {
+
+            //on crée le joueur
             String pseudo = getIntent().getExtras().getString("pseudo");
-            switch(getIntent().getExtras().getString("classe")) {
-                case "Archer": player = new Player(pseudo, new Archer()); break;
-            }
-            System.out.println(player.toString());
+            String classe = getIntent().getExtras().getString("classe");
+
+            player = Player.CreatePlayer(pseudo,classe);
         }
 
         gameManager = new GameManager();
@@ -264,7 +267,23 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
                     gm.updatePlayer();
 
-                    ((TextView) rootView.findViewById(R.id.playerName)).setText(player.toString());
+                    //pseudo
+                    ((TextView) rootView.findViewById(R.id.playerName)).setText(player.getName());
+
+                    //info
+                    ((TextView) rootView.findViewById(R.id.playerInfo)).setText("Level "+ player.getLevel() +" "+player.getClasse());
+
+                    //vie
+                    ((TextView) rootView.findViewById(R.id.playerHealth)).setText("Santé :  "+ player.getCurrentHealth() +" / "+player.getMaxHealth());
+
+                    //gold
+                    ((TextView) rootView.findViewById(R.id.playerGold)).setText("Or :  "+ player.getGold());
+
+                    //exp
+                    float progress = player.getExp()/player.getNextLevel();
+
+                    ((TextView) rootView.findViewById(R.id.playerExp)).setText("EXP : " + progress + " %");
+                    ((ProgressBar) rootView.findViewById(R.id.playerExpBar)).setProgress((int)progress);
                     break;
                 case 3:
                     //inventaire

@@ -1,4 +1,4 @@
-package fr.istic.m2miage.dungeonassault;
+package fr.istic.m2miage.dungeonassault.helpers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -93,7 +93,7 @@ public class NameGenerator {
     }
 
     private String firstCharUppercase(String name) {
-        return Character.toString(name.charAt(0)).toUpperCase() + name.substring(1);
+        return (name.charAt(0)+"").toUpperCase() + name.substring(1);
     }
     private String getRandomElementFrom(List<String> v) {
         return v.get(randomInt(0, v.size() - 1));

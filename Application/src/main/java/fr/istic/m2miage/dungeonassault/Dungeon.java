@@ -1,6 +1,7 @@
 package fr.istic.m2miage.dungeonassault;
 
-import java.util.Enumeration;
+import fr.istic.m2miage.dungeonassault.helpers.NameGenerator;
+import fr.istic.m2miage.dungeonassault.helpers.RandomUtilities;
 
 /**
  * Created by epeti on 20/11/2015.
@@ -25,7 +26,7 @@ public class Dungeon {
         String[] m = new String[nbSalles];
 
         for (int i = 0 ; i < ListeSalles.length ; i++){
-            m[i] = ListeSalles[RandomUtilities.rand(0,ListeSalles.length-1)];
+            m[i] = ListeSalles[RandomUtilities.rand(0, ListeSalles.length - 1)];
         }
 
         return m;
