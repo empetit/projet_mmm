@@ -1,9 +1,9 @@
-package fr.istic.m2miage.dungeonassault.classes;
+package fr.istic.m2miage.dungeonassault.playerClass;
 
 /**
  * Created by fesnault on 20/11/2015.
  */
-public enum Classes {
+public enum PlayerClass {
     Priest,
     Warrior,
     Rogue,

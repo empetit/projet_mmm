@@ -44,7 +44,7 @@ public class GameManager {
     public GameManager(){
     }
 
-    public void updateJeu() {
+    public void updateGame() {
     }
 
     public void updatePlayer() {

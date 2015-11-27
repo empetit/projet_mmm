@@ -3,10 +3,10 @@ package fr.istic.m2miage.dungeonassault;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import fr.istic.m2miage.dungeonassault.classes.Mage;
-import fr.istic.m2miage.dungeonassault.classes.Priest;
-import fr.istic.m2miage.dungeonassault.classes.Rogue;
-import fr.istic.m2miage.dungeonassault.classes.Warrior;
+import fr.istic.m2miage.dungeonassault.playerClass.Mage;
+import fr.istic.m2miage.dungeonassault.playerClass.Priest;
+import fr.istic.m2miage.dungeonassault.playerClass.Rogue;
+import fr.istic.m2miage.dungeonassault.playerClass.Warrior;
 import fr.istic.m2miage.dungeonassault.utility.*;
 import fr.istic.m2miage.dungeonassault.utility.Character;
 
@@ -28,15 +28,15 @@ public abstract class Player extends LivingEntity implements Character {
     private int level;
     private float exp;
     private int nextLevel;
-    private String classe;
+    private String playerClass;
     private int gold;
 
-    public Player(String classe, String name, int stamina, int resilience, int power, Armor armor, Weapon weapon) {
+    public Player(String playerClass, String name, int stamina, int resilience, int power, Armor armor, Weapon weapon) {
         //health
         super(100);
 
         this.name = name;
-        this.classe = classe;
+        this.playerClass = playerClass;
         this.stamina = stamina;
         this.resilience = resilience;
         this.power = power;
@@ -50,29 +50,50 @@ public abstract class Player extends LivingEntity implements Character {
         this.gold = 666;
     }
 
-    public void gainExp( float e ){
-        exp += exp;
-
-        //gain de niveau ?
-        if (exp >= nextLevel){
-            levelup();
+    /**
+     *
+     * @param e
+     */
+    public void addXp(float e) {
+        exp += e;
+//      While exp >= nextLevel Then LevelUp
+        while (exp >= nextLevel){
+            levelUp();
         }
     }
 
-    public void levelup(){
-        //augmente le niveau
+    /**
+     *
+     */
+    private void levelUp(){
+//      Update Level
         level++;
-
-        //TODO : modifier les stats
-
+//      Modify stats after level up
+        upStatsAfterLevelUp();
         //calcul du nouveau palier pour le niveau suivant
         nextLevel = Experience.ExpToNextLevel(level);
     }
 
+    /**
+     *
+     */
+    private void upStatsAfterLevelUp() {
+        this.stamina++;
+        this.resilience++;
+        this.power++;
+    }
+
+    /**
+     *
+     */
     public void move() {
 
     }
 
+    /**
+     *
+     * @param i
+     */
     public void use(Item i) {
         if(this.inventory.contains(i)) {
             i.use();
@@ -80,6 +101,10 @@ public abstract class Player extends LivingEntity implements Character {
         }
     }
 
+    /**
+     *
+     * @param i
+     */
     public void addItem(Item i) {
         this.inventory.add(i);
     }
@@ -87,9 +112,9 @@ public abstract class Player extends LivingEntity implements Character {
     protected abstract void action1(Character c);
     protected abstract void action2(Character c);
 
-    public static Player CreatePlayer(String pseudo, String classe) {
+    public static Player CreatePlayer(String pseudo, String playerClass) {
 
-        switch (classe){
+        switch (playerClass){
             case "Rogue": return new Rogue(pseudo);
 
             case "Warrior":return new Warrior(pseudo);
@@ -110,8 +135,8 @@ public abstract class Player extends LivingEntity implements Character {
         return level;
     }
 
-    public String getClasse() {
-        return classe;
+    public String getPlayerClass() {
+        return playerClass;
     }
 
     public int getGold() {

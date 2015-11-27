@@ -251,7 +251,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                     //jeu
                     rootView = inflater.inflate(R.layout.fragment_main_game, container, false);
 
-                    gm.updateJeu();
+                    gm.updateGame();
 
                     //nom du niveau
                     ((TextView) rootView.findViewById(R.id.levelName)).setText(dj.getName());
@@ -271,7 +271,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                     ((TextView) rootView.findViewById(R.id.playerName)).setText(player.getName());
 
                     //info
-                    ((TextView) rootView.findViewById(R.id.playerInfo)).setText("Level "+ player.getLevel() +" "+player.getClasse());
+                    ((TextView) rootView.findViewById(R.id.playerInfo)).setText("Level "+ player.getLevel() +" "+player.getPlayerClass());
 
                     //vie
                     ((TextView) rootView.findViewById(R.id.playerHealth)).setText("Santé :  "+ player.getCurrentHealth() +" / "+player.getMaxHealth());
