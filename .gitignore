@@ -40,5 +40,5 @@ captures/
 *.swp
 
 local.properties
-.gradle/**
+.gradle/2.5/taskArtifacts/*
 Application/build/**
